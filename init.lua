@@ -20,6 +20,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+-- plugins
 require("lazy").setup({
   spec = {
     
@@ -41,21 +42,12 @@ require("lazy").setup({
   checker = { enabled = true },
 })
 
--- gruvbox
-
+-- theme
 vim.o.background = "dark"
 vim.cmd([[colorscheme gruvbox]])
 
--- nvim binds
+-- binds
 vim.api.nvim_set_keymap('n', '<leader>ex', ':Ex<CR>', { noremap = true, silent = true })
-
--- telescope configuration
-local builtin = require('telescope.builtin')
-
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
-vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 
 -- tab shenanigans
 vim.opt.expandtab = true
@@ -68,3 +60,15 @@ vim.opt.clipboard = 'unnamedplus'
 -- numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
+
+-- telescope configuration
+local builtin = require('telescope.builtin')
+
+-- vim.keymap.set('n', '<leader>ff', "<cmd>Telescope find_files hidden=true<cr>", {})
+vim.keymap.set('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files({ hidden = true, find_command = {'rg', '--files', '--hidden', '-g', '!.git'} })<cr>", {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+
+-- lualine configuration
+require('lualine').setup { options = { theme = 'auto' } }
