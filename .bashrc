@@ -16,5 +16,9 @@ alias qq='pacman -Qq'
 alias nv='nvim'
 alias d='nvim ~/Daily/$(date "+%Y%m%d")'
 alias t='python Scripts/trashcan.py'
+alias h='hyprland'
 
 PS1='[\u@\h \W]\$ '
+
+export http_proxy="socks5://127.0.0.1:9050"
+export https_proxy="socks5://127.0.0.1:9050"
