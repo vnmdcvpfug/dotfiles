@@ -2,7 +2,7 @@
 
 ## properties:
 - gruvbox theme
-- tor w/bridges
+- tor w/ bridges
 
 ## features:
 - hyprland
@@ -14,9 +14,7 @@
 
 ## credits:
 - gruvbox:
-  colors https://github.com/morhetz/gruvbox
-  kitty https://github.com/wdomitrz/kitty_gruvbox_theme
-- wallpaper:
-  User:Manuelfb55, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+  https://github.com/morhetz/gruvbox
+  https://github.com/wdomitrz/kitty_gruvbox_theme
 - misc:
   https://github.com/jvscholz/dotfiles
