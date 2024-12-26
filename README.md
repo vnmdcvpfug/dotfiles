@@ -12,5 +12,11 @@
 - bash aliases
 - tor w/ bridges & bash socks proxy
 
-## wallpaper credit:
-User:Manuelfb55, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+## credits:
+- gruvbox:
+  colors https://github.com/morhetz/gruvbox
+  kitty https://github.com/wdomitrz/kitty_gruvbox_theme
+- wallpaper:
+  User:Manuelfb55, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via Wikimedia Commons
+- misc:
+  https://github.com/jvscholz/dotfiles
