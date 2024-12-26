@@ -60,6 +60,7 @@ vim.opt.clipboard = 'unnamedplus'
 -- numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.cmd "autocmd User TelescopePreviewerLoaded setlocal number"
 
 -- telescope configuration
 local builtin = require('telescope.builtin')
