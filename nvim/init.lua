@@ -21,26 +21,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 -- plugins
-require("lazy").setup({
-  spec = {
-    
-    { "nvim-telescope/telescope.nvim", tag = '0.1.8', dependencies = { "nvim-lua/plenary.nvim" } },
-    
-    { "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
-
-    { "nvim-lualine/lualine.nvim", dependencies = { "nvim-tree/nvim-web-devicons" } },
-
-    {
-      'goolord/alpha-nvim',
-      config = function ()
-        require'alpha'.setup(require'alpha.themes.dashboard'.config)
-      end
-    };
-
-  },
-  install = { colorscheme = { "habamax" } },
-  checker = { enabled = true },
-})
+require("lazy").setup("plugins")
 
 -- theme
 vim.o.background = "dark"
@@ -48,6 +29,7 @@ vim.cmd([[colorscheme gruvbox]])
 
 -- binds
 vim.api.nvim_set_keymap('n', '<leader>ex', ':Ex<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
 -- tab shenanigans
 vim.opt.expandtab = true
