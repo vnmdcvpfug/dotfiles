@@ -21,6 +21,7 @@ sudo cp -r ~/dotfiles/torrc /etc/tor/
 sudo cp -r ~/dotfiles/tlp.conf /etc/
 sudo systemctl enable tor
 sudo systemctl restart tor
-ln -s ~/dotfiles/.bashrc ~/
+ln -s ~/dotfiles/.bashrc ~/.bashrc
+source ~/.bashrc
 yay -S ungoogled-chromium-bin
 h

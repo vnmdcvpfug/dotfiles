@@ -1,0 +1,84 @@
+:root {
+  --bg:   #282828;
+  --fg:   #EBDBB2;
+  --grey: #928374;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Noto Sans Mono";
+  background-color: var(--bg);
+  color: var(--fg);
+  margin: 0;
+}
+
+#main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+pre {
+  margin: 0;
+}
+
+#logo {
+  position: absolute;
+  bottom: 128px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 1.13;
+  text-align: center;
+}
+
+input {
+  width: 727px;
+  font-family: "Noto Sans Mono";
+  font-size: 24px;
+  background-color: var(--bg);
+  color: var(--grey);
+  text-align: center;
+  border: 4px solid var(--grey);
+  padding: 10px;
+  margin: 32px 0 32px 0;
+}
+
+::placeholder {
+  font-size: 24px;
+  font-family: "Noto Sans Mono";
+  color: var(--grey);
+  text-align: center;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+a {
+  color: var(--fg);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#links {
+  position: absolute;
+  top: 128px;
+  display: flex;
+  gap: 64px;
+  width: 100%;
+  height: 148px;
+}
+
+.link-section {
+  font-size: 24px;
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
