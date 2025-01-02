@@ -16,6 +16,11 @@ alias qq='pacman -Qq'
 alias nv='nvim'
 alias t='python ~/scripts/trashcan.py'
 alias h='hyprland'
+alias ga='git add .'
+gc() {
+  git commit -m "$*"
+}
+alias gp='git push origin main'
 
 PS1='[\u@\h \W]\$ '
 
