@@ -19,6 +19,7 @@ sudo pacman -S tor torsocks kitty neovim hyprland hypridle hyprpaper hyprlock xo
 yay -S obfs4proxy
 sudo cp -r ~/dotfiles/torrc /etc/tor/
 sudo cp -r ~/dotfiles/tlp.conf /etc/
+sudo systemctl enable tlp
 sudo systemctl enable tor
 sudo systemctl restart tor
 ln -s ~/dotfiles/.bashrc ~/.bashrc

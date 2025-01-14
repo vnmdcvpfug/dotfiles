@@ -21,8 +21,13 @@ gc() {
   git commit -m "$*"
 }
 alias gp='git push origin main'
+alias eb='sudo systemctl enable --now bluetooth && sudo systemctl start bluetooth'
+alias db='sudo systemctl disable --now bluetooth'
 
 PS1='[\u@\h \W]\$ '
 
-export http_proxy="socks5://127.0.0.1:9050"
-export https_proxy="socks5://127.0.0.1:9050"
+export http_proxy="socks5h://127.0.0.1:9050"
+export https_proxy="socks5h://127.0.0.1:9050"
+export ftp_proxy="socks5h://127.0.0.1:9050"
+export rsync_proxy="socks5h://127.0.0.1:9050"
+export all_proxy="socks5h://127.0.0.1:9050"
