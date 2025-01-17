@@ -6,6 +6,7 @@
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias la='ls -a'
 alias grep='grep --color=auto'
 alias s='sudo pacman -S'
 alias sc='sudo pacman -Sc'
@@ -13,21 +14,28 @@ alias se='pacman -Ss'
 alias syu='sudo pacman -Syu'
 alias rns='sudo pacman -Rns'
 alias qq='pacman -Qq'
-alias nv='nvim'
-alias t='python ~/scripts/trashcan.py'
+alias vi='vim'
 alias h='hyprland'
 alias ga='git add .'
+alias gp='git push origin main'
+
 gc() {
   git commit -m "$*"
 }
-alias gp='git push origin main'
-alias eb='sudo systemctl enable --now bluetooth && sudo systemctl start bluetooth'
-alias db='sudo systemctl disable --now bluetooth'
+g() {
+  cd $1 && ls -a
+}
 
-PS1='[\u@\h \W]\$ '
+PS1='> '
 
 export http_proxy="socks5h://127.0.0.1:9050"
 export https_proxy="socks5h://127.0.0.1:9050"
 export ftp_proxy="socks5h://127.0.0.1:9050"
 export rsync_proxy="socks5h://127.0.0.1:9050"
 export all_proxy="socks5h://127.0.0.1:9050"
+
+export FFF_HIDDEN=1
+export FFF_OPENER="xdg-open"
+export FFF_KEY_IMAGE="i"
+
+export EDITOR="vim"
