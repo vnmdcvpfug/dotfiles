@@ -26,6 +26,8 @@ g() {
   cd $1 && ls -a
 }
 
+alias gg='cd .. && ls -a'
+
 PS1='> '
 
 export http_proxy="socks5h://127.0.0.1:9050"
