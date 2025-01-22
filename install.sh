@@ -1,3 +1,5 @@
+sudo cp -r ~/dotfiles/sudoers /etc/sudoers
+sudo cp -r ~/dotfiles/nanorc /etc/nanorc
 cd
 mkdir opt
 cd ~/opt
@@ -15,7 +17,7 @@ sudo cp -r ./obfs4proxy/obfs4proxy /usr/bin/
 cd ~/dotfiles
 ln -s ~/dotfiles/hypr ~/.config/hypr
 ln -s ~/dotfiles/kitty ~/.config/kitty
-sudo pacman -S chromium hyprland kitty noto-fonts noto-fonts-cjk noto-fonts-emoji tor torsocks
+sudo pacman -S chromium hyprland kitty nano noto-fonts noto-fonts-cjk noto-fonts-emoji tor torsocks
 sudo cp -r ~/dotfiles/torrc /etc/tor/
 sudo systemctl enable --now tor
 ln -s ~/dotfiles/.bashrc ~/.bashrc
