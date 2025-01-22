@@ -1,5 +1,6 @@
 sudo cp -r ~/dotfiles/sudoers /etc/sudoers
 sudo cp -r ~/dotfiles/nanorc /etc/nanorc
+sudo cp -r ~/dotfiles/setbrightness /usr/bin/setbrightness
 cd
 mkdir opt
 cd ~/opt
