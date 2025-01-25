@@ -21,6 +21,6 @@ ln -s ~/dotfiles/kitty ~/.config/kitty
 sudo pacman -S chromium hyprland kitty nano noto-fonts noto-fonts-cjk noto-fonts-emoji tor torsocks
 sudo cp -r ~/dotfiles/torrc /etc/tor/
 sudo systemctl enable --now tor
+rm -v ~/.bashrc
 ln -s ~/dotfiles/.bashrc ~/.bashrc
-source ~/.bashrc
-h
+hyprland
