@@ -1,3 +1,5 @@
+echo 70 | sudo tee /sys/class/power_supply/BAT1/charge_start_threshold
+echo 80 | sudo tee /sys/class/power_supply/BAT1/charge_stop_threshold
 sudo cp -r ~/dotfiles/sudoers /etc/sudoers
 sudo cp -r ~/dotfiles/nanorc /etc/nanorc
 sudo cp -r ~/dotfiles/setbrightness /usr/bin/setbrightness
