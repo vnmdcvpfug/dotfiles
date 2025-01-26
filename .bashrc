@@ -22,6 +22,7 @@ g() {
   cd $1 && ls -a
 }
 alias gg='cd .. && ls -a'
+alias bat='cat /sys/class/power_supply/BAT1/capacity'
 
 PS1='> '
 
