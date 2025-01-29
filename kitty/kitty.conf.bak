@@ -20,7 +20,7 @@
 #: <https://sw.kovidgoyal.net/kitty/kittens/choose-fonts/#font-spec-
 #: syntax>.
 
-font_size 11.0
+font_size 12.0
 
 #: Font size (in pts).
 
@@ -892,7 +892,7 @@ initial_window_height 17c
 #: that setting a non-zero window_margin_width overrides this and
 #: causes all borders to be drawn.
 
-window_margin_width 2
+# window_margin_width 0
 
 #: The window margin (in pts) (blank area outside the border). A
 #: single value sets all four sides. Two values set the vertical and
@@ -907,7 +907,7 @@ window_margin_width 2
 #: set the vertical and horizontal sides. Three values set top,
 #: horizontal and bottom. Four values set top, right, bottom and left.
 
-# window_padding_width 0
+window_padding_width 0 0
 
 #: The window padding (in pts) (blank area between the text and the
 #: window border). A single value sets all four sides. Two values set
@@ -1093,7 +1093,7 @@ tab_bar_style powerline
 #: The horizontal alignment of the tab bar, can be one of: left,
 #: center, right.
 
-# tab_bar_min_tabs 1
+tab_bar_min_tabs 1
 
 #: The minimum number of tabs that must exist before the tab bar is
 #: shown.
@@ -1190,7 +1190,7 @@ tab_title_template "{title}"
 
 # active_tab_foreground   #000
 # active_tab_background   #eee
-# active_tab_background    #cba6f7
+active_tab_background    #cba6f7
 # active_tab_font_style   bold-italic
 # active_tab_font_style   bold
 # inactive_tab_foreground #444
@@ -1200,7 +1200,7 @@ tab_title_template "{title}"
 # inactive_tab_font_style normal
 
 #: Tab bar colors and styles.
-# tab_bar_background #cba6f7
+tab_bar_background #cba6f7
 
 #: Background color for the tab bar. Defaults to using the terminal
 #: background color.
@@ -2642,12 +2642,3 @@ tab_title_template "{title}"
 #: }}}
 
 #: }}}
-
-
-# BEGIN_KITTY_THEME
-# Catppuccin-Mocha
-include current-theme.conf
-# END_KITTY_THEME
-
-active_tab_background #cba6f7
-tab_bar_background #cba6f7
