@@ -31,3 +31,4 @@ PS1='> '
 #export ftp_proxy="socks5h://127.0.0.1:9050"
 #export rsync_proxy="socks5h://127.0.0.1:9050"
 #export all_proxy="socks5h://127.0.0.1:9050"
+#export no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"

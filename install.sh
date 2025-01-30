@@ -1,4 +1,6 @@
 sudo cp -r ~/dotfiles/sudoers /etc/sudoers
+sudo cp -r ~/dotfiles/05_proxy /etc/sudoers.d/05_proxy
+sudo cp -r ~/dotfiles/environment /etc/environment
 sudo cp -r ~/dotfiles/brightnessctl /usr/bin/brightnessctl
 sudo cp -r ~/dotfiles/batteryctl.service /etc/systemd/system/batteryctl.service
 sudo systemctl enable --now batteryctl.service
