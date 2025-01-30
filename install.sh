@@ -28,6 +28,11 @@ ln -s ~/dotfiles/zathura ~/.config/zathura
 sudo pacman -S chromium hyprland hyprpaper kitty noto-fonts noto-fonts-cjk noto-fonts-emoji nvim python-pillow ranger tor torsocks wl-clipboard xdg-desktop-portal-hyprland zathura zathura-pdf-mupdf
 sudo cp -r ~/dotfiles/torrc /etc/tor/
 sudo systemctl enable --now tor
+sudo cp -r ~/dotfiles/iptables.rules /etc/iptables/iptables.rules
+sudo rm /etc/iptables/ip6tables.rules
+sudo ln -s /etc/iptables/iptables.rules /etc/iptables/ip6tables.rules
+sudo systemctl enable --now iptables
+sudo systemctl enable --now ip6tables
 rm ~/.bashrc
 ln -s ~/dotfiles/.bashrc ~/.bashrc
 cd

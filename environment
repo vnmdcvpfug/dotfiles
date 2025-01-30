@@ -4,9 +4,9 @@
 # Syntax: simple "KEY=VAL" pairs on separate lines
 #
 
-http_proxy="socks5h://127.0.0.1:9050"
-https_proxy="socks5h://127.0.0.1:9050"
-ftp_proxy="socks5h://127.0.0.1:9050"
-rsync_proxy="socks5h://127.0.0.1:9050"
-all_proxy="socks5h://127.0.0.1:9050"
-no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
+#http_proxy="socks5h://127.0.0.1:9050"
+#https_proxy="socks5h://127.0.0.1:9050"
+#ftp_proxy="socks5h://127.0.0.1:9050"
+#rsync_proxy="socks5h://127.0.0.1:9050"
+#all_proxy="socks5h://127.0.0.1:9050"
+#no_proxy="localhost,127.0.0.1,localaddress,.localdomain.com"
