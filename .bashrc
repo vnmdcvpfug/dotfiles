@@ -26,8 +26,8 @@ alias bat='cat /sys/class/power_supply/BAT1/capacity'
 
 PS1='> '
 
-export http_proxy="socks5h://127.0.0.1:9050"
-export https_proxy="socks5h://127.0.0.1:9050"
-export ftp_proxy="socks5h://127.0.0.1:9050"
-export rsync_proxy="socks5h://127.0.0.1:9050"
-export all_proxy="socks5h://127.0.0.1:9050"
+#export http_proxy="socks5h://127.0.0.1:9050"
+#export https_proxy="socks5h://127.0.0.1:9050"
+#export ftp_proxy="socks5h://127.0.0.1:9050"
+#export rsync_proxy="socks5h://127.0.0.1:9050"
+#export all_proxy="socks5h://127.0.0.1:9050"
