@@ -1,2 +1,4 @@
 include catppuccin-mocha
 set guioptions none
+set guioptions v
+set selection-clipboard clipboard

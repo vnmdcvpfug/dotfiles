@@ -1,6 +1,7 @@
 sudo cp -r ~/dotfiles/sudoers /etc/sudoers
 sudo cp -r ~/dotfiles/brightnessctl /usr/bin/brightnessctl
 sudo cp -r ~/dotfiles/batteryctl.service /etc/systemd/system/batteryctl.service
+sudo systemctl enable --now batteryctl.service
 cp -r ~/dotfiles/blender ~/blender
 cd
 mkdir opt
