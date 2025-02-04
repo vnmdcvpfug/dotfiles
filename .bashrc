@@ -21,12 +21,13 @@ g() {
 }
 alias gg='cd .. && ls -a'
 alias bat='cat /sys/class/power_supply/BAT1/capacity'
+alias temp='cat /sys/class/thermal/thermal_zone0/temp'
 bton() {
-  sudo systemctl enable --now bluetooth && bluetoothctl connect $(cat ~/dotfiles/device)
+  sudo systemctl enable --now bluetooth && bluetoothctl connect $(sudo cat ~/dotfiles/device)
 }
-btoff() {
-  sudo systemctl disable --now bluetooth && bluetoothctl connect $(cat ~/dotfiles/device)
-}
+alias btoff='sudo systemctl disable --now bluetooth'
+alias dn='nvim ~/notes/10_daily/$(date +%m-%d-%Y)'
+alias t='date "+%A, %B %d, %Y, %H:%M"'
 
 PS1='> '
 
