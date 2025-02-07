@@ -31,6 +31,9 @@ alias t='date "+%A, %B %d, %Y, %H:%M"'
 
 PS1='> '
 
+export VISUAL=nvim
+export EDITOR=nvim
+
 #export http_proxy="socks5h://127.0.0.1:9050"
 #export https_proxy="socks5h://127.0.0.1:9050"
 #export ftp_proxy="socks5h://127.0.0.1:9050"
