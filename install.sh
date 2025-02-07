@@ -25,7 +25,7 @@ ln -s ~/dotfiles/kitty ~/.config/kitty
 ln -s ~/dotfiles/nvim ~/.config/nvim
 ln -s ~/dotfiles/ranger ~/.config/ranger
 ln -s ~/dotfiles/zathura ~/.config/zathura
-sudo pacman -S chromium hyprland hyprpaper kitty noto-fonts noto-fonts-cjk noto-fonts-emoji nvim python-pillow ranger ripgrep tor torsocks wl-clipboard xdg-desktop-portal-hyprland zathura zathura-pdf-mupdf
+sudo pacman -S chromium hyprland hyprpaper kitty noto-fonts noto-fonts-cjk noto-fonts-emoji neovim python-pillow ranger ripgrep tor torsocks wl-clipboard xdg-desktop-portal-hyprland zathura zathura-pdf-mupdf
 sudo cp -r ~/dotfiles/torrc /etc/tor/
 sudo systemctl enable --now tor
 sudo cp -r ~/dotfiles/iptables.rules /etc/iptables/iptables.rules
